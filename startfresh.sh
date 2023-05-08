@@ -5,7 +5,7 @@ docker-compose down
 sleep 2
 
 echo "[INFO] Removing old volumes...."
-docker volume rm mysql_binary_logs_db-data mysql_binary_logs_db-logs
+docker volume rm demo_mysql_binary_logs_db-data demo_mysql_binary_logs_db-logs
 
 echo "[INFO] Preparing new volumes..."
 cp docker-compose.yml docker-compose.yml.bak
